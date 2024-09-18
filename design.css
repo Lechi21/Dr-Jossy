@@ -1,0 +1,816 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    /* position: fixed; */
+    width: 100%;
+    z-index: 1;
+}
+
+.header-content {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.header-content .home {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-content span {
+    font-size: 15px;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.header-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #21abc0;
+    font-weight: 500;
+}
+
+header .hamburger {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-weight: 500;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+.jossy {
+    display: flex;
+    padding: 70px 50px 50px 0px;
+    background-color: #ffffff;
+}
+
+.cover-image {
+    flex-basis: 50%;
+    flex: 1;
+}
+
+.jossy img {
+    object-fit: contain;
+    width: 90%;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 0 20px 20px 0;
+}
+
+.jossy-text {
+    flex-basis: 45%;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.jossy-text h2 {
+    font-size: 5rem;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    font-weight: 400;
+}
+
+.jossy-text p {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.3rem;
+    color: #000000;
+    margin-left: 50px;
+}
+
+/* Feature Section */
+.feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 50px;
+}
+
+.feature-content {
+    max-width: 50%;
+}
+
+.feature-content h3 {
+    font-size: 4rem;
+    font-weight: 400;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.feature-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    padding-right: 60px;
+}
+
+.feature-content .watch-now {
+    display: flex;
+    padding: 10px 20px;
+    border: 2px solid #2c3e50;
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 600;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.feature-content .watch-now:hover {
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+.feature-video {
+    display: flex;
+    position: relative;
+    max-width: 45%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.feature-video img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.feature-video .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.feature-video .play-button::before {
+    content: '▶';
+    font-size: 2rem;
+    color: white;
+}
+
+/* Best Sellers Section */
+.best-sellers {
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+.best-sellers h2 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #21abc0;
+}
+
+.best-sellers h1 {
+    font-weight: 500;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.books-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.books-cover {
+    flex-basis: 50%;
+    display: flex;
+    gap: 2rem;
+}
+
+.book {
+    max-width: 40%;
+}
+
+.book img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.book img:hover {
+    transform: translateY(-10px);
+}
+
+.book h3 {
+    font-weight: 800;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: small;
+}
+
+.book .btn {
+    padding: 6px 15px;
+    border: 2px solid #2c3e50;
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.book .btn:hover {
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+.book-description {
+    max-width: 45%;
+    text-align: left;
+}
+
+.book-description h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.book-description p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    margin-left: 30px;
+}
+
+.book-description .view-all {
+    display: flex;
+    padding: 10px 20px;
+    border: 2px solid #2c3e50;
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    justify-content: space-around;
+    width: 30%;
+    margin-left: 30px;
+}
+
+.book-description .view-all:hover {
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+.story-section {
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+.story-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.story-image {
+    display: flex;
+    flex-basis: 50%;
+    gap: 5px;
+    height: auto;
+}
+
+.story-image img {
+    width: 200px;
+    box-shadow: 0px 0px 10px 3px rgba(233, 233, 233, 0.5);
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.story-image img:hover {
+    transform: translateY(-10px);
+}
+
+.story-image .photo-1 {
+    object-fit: fill;
+    height: 520px;
+}
+
+.story-image .photo-2 {
+    object-fit: fill;
+    margin-top: 50px;
+    height: 520px;
+}
+
+.story-image .photo-3 {
+    object-fit: fill;
+    margin-top: 25px;
+    height: 585px;
+}
+
+.story-text {
+    flex-basis: 45%;
+    padding-left: 30px;
+}
+
+.story-text h4 {
+    font-size: 1.5rem;
+    color: #21abc0;
+    font-weight: 400;
+}
+
+.story-text h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 400;
+}
+
+.story-text .view-all {
+    display: flex;
+    padding: 5px 20px;
+    background-color: #21abc0;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.nums {
+    display: flex;
+    align-items: center;
+}
+
+.num {
+    font-size: xxx-large;
+    margin-right: 5px;
+}
+
+.num-word {
+    font-weight: lighter;
+}
+
+.subscribe {
+    padding: 50px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.subscription-form {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.subscription-form h2 {
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-weight: 400;
+    color: #2c3e50;
+}
+
+.subscription-form input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.subscription-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer {
+    background-color: #00678b;
+    height: 10vh;
+    align-content: center;
+}
+
+footer .down {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+}
+
+footer .down .one ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-weight: 500;
+}
+
+footer .down .one ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer .two {
+    color: #ffffff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 20px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    color: #fff;
+}
+
+@media (max-width: 1200px) {
+    /* Header adjustments */
+    .header-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .header-content span {
+        font-size: 11px;
+        margin-bottom: 10px;
+        margin-left: 3px;
+    }
+
+    /* Jossy section adjustments */
+
+    .jossy img {
+        width: 100%;
+    }
+
+    .jossy-text h2 {
+        font-size: 3rem;
+        margin-left: 40px;
+    }
+
+    .jossy-text p {
+        font-size: 1.6rem;
+        margin-left: 40px;
+    }
+
+    /* Feature section adjustments */
+    .feature {
+        padding: 30px;
+        margin-top: 20px;
+    }
+
+    .feature-content h3 {
+        font-size: 1.6rem;
+    }
+
+    .feature-content p {
+        font-size: 1rem;
+    }
+
+    .feature-content .watch-now {
+        padding: 2px 10px;
+        width: 45%;
+    }
+
+    /* Best Sellers section adjustments */
+    .best-sellers {
+        padding: 30px;
+        margin-top: 20px;
+    }
+
+    .best-sellers h2 {
+        font-size: 1.3rem;
+    }
+
+    .best-sellers h1 {
+        font-size: 1.6rem;
+    }
+
+    .book .btn {
+        padding: 5px;
+        border: 1px solid #2c3e50;
+        color: #000000;
+        font-weight: 100;
+        font-size: 12px;
+    }
+
+    .book-description h2 {
+        font-size: 1.6rem;
+        margin-left: 20px;
+        margin-left: 0; 
+    }
+
+    .book-description p {
+        font-size: 1rem;
+        margin-left: 20px;
+        margin-left: 0; 
+    }
+
+    .book-description .view-all {
+        padding: 2px 10px;
+        width: 45%;
+        margin-left: 0; 
+    }
+
+    /* Story section adjustments */
+    .story-section {
+        padding: 30px;
+        margin-top: 20px;
+    }
+
+    .story-image .photo-1 {
+        height: 270px;
+        width: 155px;
+    }
+
+    .story-image .photo-2 {
+        width: 155px;
+        height: 280px;
+    }
+
+    .story-image .photo-3 {
+        display: none;
+    }
+
+    .story-text {
+        padding-left: 0px;
+    }
+
+    .story-text h4 {
+        font-size: 1.1rem;
+    }
+
+    .story-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .story-p {
+        font-size: 1rem;
+    }
+
+    .num {
+        font-size: xx-large;
+    }
+
+    .num-word {
+        font-size: 12px;
+    }
+
+    /* Subscribe section */
+    .subscription-form h2 {
+        font-size: 2rem;
+    }
+
+    /* Footer */
+    footer .down .one ul {
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+
+    footer .down .two p {
+        font-size: 0.8rem;
+    }
+
+    .social-icons i {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 769px) {
+    header {
+        position: fixed;
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    .header-content h1 {
+        font-size: 1.6rem;
+    }
+
+    header .hamburger {
+        display: flex;
+        color: #636262e3;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    header .open {
+        right: 0;
+    }
+
+    nav {
+        flex: 1;
+        position: fixed;
+        background: white;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        right: -100%;
+        z-index: 2;
+        transition: 1s;
+        opacity: 100%;
+        overflow: auto;
+        color: black;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        margin: 20px;
+    }
+
+    nav ul li {
+        padding: 2px;
+    }
+
+    .jossy {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .cover-image {
+        margin-top: 100px;
+    }
+
+    .jossy img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .jossy-text h2 {
+        font-size: 2.6rem;
+        margin: 20px;
+
+    }
+
+    .jossy-text {
+        flex-basis: 100%;
+        font-size: 1.5rem;
+        color: #2c3e50;
+        text-align: center;
+    }
+
+    .jossy-text p {
+        font-size: 1.6rem;
+        margin: 20px;
+    }
+
+    .feature {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .feature-content {
+        max-width: 100%;
+    }
+
+    .feature-content p {
+        padding: 0;
+    }
+
+    .feature-video {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .best-sellers h1 {
+        font-size: 1.5rem;
+    }
+
+    .books-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book {
+        max-width: 100%;
+    }
+
+    .book h3 {
+        margin-bottom: 15px;
+    }
+
+    .book-description {
+        margin-top: 55px;
+        max-width: 100%;
+    }
+
+    .book-description h2 {
+        font-size: 1.6rem;
+        margin-left: 0;
+    }
+
+    .book-description p {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .story-section {
+        padding: 30px;
+    }
+
+    .story-content {
+        flex-direction: column;
+    }
+
+    .story-text {
+        margin-top: 30px;
+    }
+
+    .story-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .story-image {
+        flex-direction: row;
+    }
+
+    .story-image .photo-1 {
+        height: 215px;
+        width: 135px;
+    }
+
+    .story-image .photo-2 {
+        width: 135px;
+        height: 215px;
+    }
+
+    .subscribe {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .subscription-form h2 {
+        font-size: 1.6rem;
+    }
+
+    form {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscription-form button {
+        padding: 10px 20px;
+        width: 50%;
+    }
+
+    footer {
+        background-color: #00678b;
+        height: 15vh;
+        align-content: center;
+    }
+
+    footer .down {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
