@@ -18,11 +18,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 10px 40px;
     background-color: #ffffff;
-    /* position: fixed; */
+    position: sticky;
     width: 100%;
     z-index: 1;
+    top: 0;
 }
 
 .header-content {
@@ -431,8 +432,9 @@ footer {
 
 footer .down {
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-between; 
     align-items: center;
+    margin: 0 50px;
 }
 
 footer .down .one ul {
